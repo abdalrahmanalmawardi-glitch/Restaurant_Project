@@ -1,0 +1,15 @@
+
+.ConnectionComponentItem{
+    display: flex;
+    padding: 10px 20px;
+    background: #e2e2e2;
+    justify-content: space-between;
+    align-items: center;
+}
+.ConnectionComponentItem p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+}

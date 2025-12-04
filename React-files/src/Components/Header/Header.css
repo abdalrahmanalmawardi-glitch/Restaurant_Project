@@ -1,0 +1,66 @@
+.AppHeader{
+    
+    background: #c95a00;
+    padding: 10px 20px;
+    display: flex;
+    z-index: 10;
+    position: sticky;
+    box-shadow: #000 0px 0px 20px 10px;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.AppHeader *{
+    color: #000000;
+}
+
+.AppHeaderDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 50vw;
+}
+
+.TheHeadeLink{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+}
+
+
+
+.TheHeadeLink *{
+    transition: .5s;
+    color: #ffffff;
+}
+
+.AppHeaderDivIcon:hover{
+    text-decoration: solid underline 2px #ffffff;
+}
+
+.AppHeaderDivIcon *{
+
+    text-decoration: none;
+}
+
+@media (max-width : 425px) {
+    .AppHeaderDiv div p{
+        display: none;
+    }
+
+    .AppHeader h1{
+        font-size: 24px;
+    }
+
+    .AppHeaderDiv div{
+        margin: 0 10px;
+    }
+
+    .AppHeaderDiv{
+        justify-content: right;
+        
+    }
+
+}

@@ -1,0 +1,9 @@
+.AddOrder{
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    background: #ffcd82;
+    justify-content: space-around;
+}

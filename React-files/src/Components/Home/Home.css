@@ -1,0 +1,49 @@
+.HomeTopImg{
+    height: 50vh;
+}
+
+.HomeMenuImagesContainers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.HomeMenu{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #692f00;
+}
+
+.HomeMenu h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.HomeMenuItem{
+    padding: 10px;
+    font-size: larger;
+    text-align: center;
+    margin: 5px;
+}
+
+.HomeMenuItem div{
+    height: 150px;
+    width: 150px;
+}
+
+@media (max-width : 400px) {
+    .HomeMenuItem div{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width : 500px) {
+    .HomeTopImg{
+        height: 30vh;
+    }
+}

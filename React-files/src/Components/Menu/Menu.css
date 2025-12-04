@@ -1,0 +1,50 @@
+.MenuPage{
+    padding: 15px;
+}
+
+.MenuPageItem{
+    background-color: #ffbf65;
+    color: #000000;
+    padding: 15px;
+}
+
+.MenuPageItem h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MenuPageItemContainer{
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.MenuPageItemContainer li{
+    font-size: larger;
+    font-weight: bold;
+}
+.MenuPageContainerItem{
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media (max-width : 500px) {
+    .MenuPageItemContainer{
+        justify-content: start;
+    
+    }
+    .MenuPageItem h1{
+        letter-spacing: 5px;
+    }
+    .MenuPageContainerItem h2{
+        letter-spacing: 3px;
+    }
+    .MenuPageContainerItem li{
+        letter-spacing: 2px;
+    }
+}

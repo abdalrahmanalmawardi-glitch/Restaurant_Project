@@ -1,0 +1,81 @@
+.LocationImage{
+    height: calc(490px/1.5);
+    width: calc(325px/1.5);
+    background-position: center;
+    position: absolute;
+    left: 0;
+    background-size: contain;
+}
+
+.LocationDiv{
+    position: relative;
+    background-color: #180e00;
+    height: calc(490px/1.5);
+
+}
+.LocationDivDiv{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #ff6347;
+}
+.LocationDiv ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.LocationImageS{
+    height: calc(490px/1.5);
+    width: calc(325px/1.5);
+    background-position: center;
+    position: absolute;
+    right: 0;
+    background-size: contain;
+}
+
+
+@media (max-width : 725px) {
+    .LocationImageS{
+        display: none;
+    }
+    .LocationDivDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    
+    }
+    .LocationImage{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    position: absolute;
+    background-size: contain;
+    z-index: -1;
+    
+    }
+    .LocationImage::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fffa;
+    }
+    .LocationDiv{
+        z-index: 0;
+        
+    }
+    .LocationDivDiv li{
+        font-weight: bolder;
+    }
+
+    
+}
